@@ -1,0 +1,97 @@
+// let str = 'angus.young@gmail.com;brian.johnson@hotmail.com;bon.scott@yahoo.com';
+// console.log(getRectangleString(2, 3));
+
+//  *            '┌────┐\n'+
+//  *  (6,4) =>  '│    │\n'+
+//  *            '│    │\n'+
+//  *            '└────┘\n'
+//  *
+//  *  (2,2) =>  '┌┐\n'+
+//  *            '└┘\n'
+//  *
+//  *             '┌──────────┐\n'+
+//  *  (12,3) =>  '│          │\n'+
+//  *             '└──────────┘\n'
+//  *
+//  */
+// function getRectangleString(width, height) {
+//   // throw new Error('Not implemented');
+//   console.log('┌', '─────', '┐', '\/n\n');
+//   console.log('│', '     ', '│', '\/n\n');
+//   for(let i = 0;i<height; i++){
+//     console.log('-'.repeat(width));
+//   }
+// }
+
+// const str = 'hello!!!!!??#$%#$@#';
+// console.log(encodeToRot13(str));
+
+
+// var str = 'hello world';
+// var result = regex.test(str);
+// console.log(result);
+// returns true
+
+// function encodeToRot13(str) {
+//   // throw new Error('Not implemented');
+//   const array = [];
+//   const regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/;
+//   str.split('').forEach((element) => {
+//     if ((regex.test(element)) || (element === ' ')) {
+//       array.push(element);
+//     } else if (element === element.toUpperCase()) {
+//       array.push(String.fromCharCode(((element.charCodeAt() - 65 + 13) % 26) + 65));
+//     } else {
+//       array.push(String.fromCharCode(((element.charCodeAt() - 97 + 13) % 26) + 97));
+//     }
+//   });
+//   return array.join('');
+// }
+// const str = new String('test');
+
+
+// console.log(getLinearEquationRoot(5, 10));
+
+// function getLinearEquationRoot(a, b) {
+//   // throw new Error('Not implemented');
+//   if (b / a < 0) {
+//     return -Math.sqrt(Math.abs(b / a));
+//   }
+//   // console.log(a, b);
+//   return Math.sqrt(b / a);
+//   // return -b / (2 * a);
+// }
+// console.log(generateOdds(5));
+
+// function generateOdds(len) {
+//   // throw new Error('Not implemented');
+//   if (len === 0) return [];
+//   const array = new Array(len);
+//   // console.log(array);
+//   let prevElement = -1;
+//   return array.fill('').map(() => {
+//     prevElement += 2;
+//     return prevElement;
+//   });
+// }
+
+// const arr = [
+//   [  0, 1, 2, 3, 4 ],
+//   [ 10,11,12,13,14 ],
+//   [ 20,21,22,23,24 ],
+//   [ 30,31,32,33,34 ]
+// ]
+
+// console.log(toCsvText(arr));
+
+// function toCsvText(arr) {
+//   console.log();
+//   return arr.join('\n');
+// }
+
+// console.log(propagateItemsByPositionIndex([1,2,3]));
+
+// function propagateItemsByPositionIndex(arr) {
+//   // throw new Error('Not implemented');
+//   return arr.map((element, index) => new Array(index + 1).fill(element)).flat();
+// }
