@@ -95,3 +95,50 @@
 //   // throw new Error('Not implemented');
 //   return arr.map((element, index) => new Array(index + 1).fill(element)).flat();
 // }
+// const arr = [1, 2]
+
+// console.log(get3TopItems(arr));
+
+// function get3TopItems(arr) {
+//   // throw new Error('Not implemented');
+//   // if (arr.length === 0) return [];
+//   // if (arr.length === 2) return arr.sort((a, b) => a - b).slice(2);
+//   arr.sort((a, b) => b - a);
+//   return arr.slice(0, 2);
+// }
+// const arr = [
+//   { country: 'Russia', city: 'Moscow' },
+//   { country: 'Belarus', city: 'Minsk' },
+//   { country: 'Poland', city: 'Warsaw' },
+//   { country: 'Russia', city: 'Saint Petersburg' },
+//   { country: 'Poland', city: 'Krakow' },
+//   { country: 'Belarus', city: 'Brest' },
+// ];
+
+// console.log(sortCitiesArray(arr));
+
+// function sortCitiesArray(arr) {
+//   // throw new Error('Not implemented');
+//   arr.sort((a, b) => {
+//     if (a.country > b.country) return 1;
+//     if (a.country < b.country) return -1;
+//     if (a.city > b.city) return 1;
+//     if (a.city < b.city) return -1
+//       return 0;
+//     });
+//   return arr;
+// }
+
+// console.log(getIdentityMatrix(4));
+
+// function getIdentityMatrix(n) {
+//   // throw new Error('Not implemented');
+//   const identityMatrix = new Array(n).fill('').map(() => new Array(n).fill(0));
+//   identityMatrix.map((element, index) => {
+//     const array = element;
+//     array[index] = 1;
+//     // console.log();
+//     return array;
+//   });
+//   return identityMatrix;
+// }
