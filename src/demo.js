@@ -142,3 +142,59 @@
 //   });
 //   return identityMatrix;
 // }
+// const arr = [ 1, 2, 3, 4 ];
+// console.log(swapHeadAndTail(arr));
+
+// function swapHeadAndTail(arr) {
+//   // throw new Error('Not implemented');
+//   const lengtOftail = Math.floor(arr.length / 2);
+//   if (arr.length % 2 === 0) return [...arr.slice(-lengtOftail), ...arr.slice(0, lengtOftail)];
+//   return [...arr.slice(-lengtOftail), arr[lengtOftail], ...arr.slice(0, lengtOftail)];
+// }
+
+// Date(2000,1,1,10,0,0),  Date(2000,1,1,11,0,0)   => "01:00:00.000"
+// "HH:mm:ss.sss"
+// HH:mm:ss.sss – часы, минуты, секунды и миллисекунды.
+// const startDate = new Date(2000,1,1,10,0,0);
+// const endDate = new Date(2000,1,1,11,0,0);
+
+// console.log(timeSpanToString(startDate, endDate));
+
+// function timeSpanToString(startDate, endDate) {
+//   // throw new Error('Not implemented');
+//   const calculation = endDate - startDate;
+//   const d = new Date(calculation);
+//   const time = d.toTimeString().split(' ')[0];
+//   let sss = d.getMilliseconds();
+//   // console.log(d.getHours());
+//   if(sss.toString.length === 1) sss = '00' + sss;
+//   if(sss.toString.length === 2) sss = '00' + sss;
+//   return `${time}.${sss}`;
+// }
+// const Circle = function Circle(radius) {
+//       this.radius = radius;
+//     };
+
+//     Circle.prototype.getCircumference = function getCircumference() {
+//       return 2 * Math.PI * this.radius;
+//     };
+
+// const object = {
+//   proto: Circle.prototype,
+//   json: '{ "radius":10 }',
+//   expected: new Circle(10),
+// }
+
+// console.log(fromJSON(object.proto, object.json));
+
+// function fromJSON(proto, json) {
+//   // throw new Error('Not implemented');
+//   const values = JSON.parse(json, function(key, value) {
+
+//     return value;
+//   });
+//   // return new Circle(12);
+//   return proto;
+// }
+
+// console.log(fromJSON(object.proto, object.json).getCircumference());
