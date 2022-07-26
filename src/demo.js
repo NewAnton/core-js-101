@@ -198,3 +198,28 @@
 // }
 
 // console.log(fromJSON(object.proto, object.json).getCircumference());
+
+// console.log(getIntervalString(5, 1, true, false));
+
+// function getIntervalString(a, b, isStartIncluded, isEndIncluded) {
+//   // throw new Error('Not implemented');
+//   const [_a, _b] = [a, b].sort((a, b) => a - b);
+//   return `${isStartIncluded === true ? '[' : '('}${_a},
+//  ${_b}${isEndIncluded === true ? ']' : ')'}`
+// }
+
+// console.log(isCreditCardNumber(4571234567890111));
+
+// function isCreditCardNumber(ccn) {
+//   // throw new Error('Not implemented');
+//   const nDigits = ccn.toString().length;
+//   let sum = 0;
+//   const parity = (nDigits - 2) % 2;
+//   for (let i = 0; i < nDigits;) {
+//     let digit = ccn[i];
+//     if (i % 2 === parity) digit *= 2;
+//     if (digit > 9) digit -= 9;
+//     sum += digit;
+//   }
+//   return (sum % 10 === 0);
+// }
